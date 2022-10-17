@@ -17,9 +17,11 @@ body{
     padding: 1rem;
 }
 .logo{
+    width: 5%;
     margin: 2rem 0;
 }
 h1{
+    font-size: 2rem;
     font-weight: 300;
     color: var(--Gray);
     margin-bottom: .5rem;
@@ -31,12 +33,32 @@ b{
     font-size: .8rem;
     margin-bottom: 2rem;
 }
+form{
+    position: relative;
+}
 input{
     width: 25%;
-    padding: .8rem 1rem;
+    padding: .8rem 1.5rem;
     border: 1px solid var(--Pale-Blue);
     border-radius: 2rem;
     outline: none;
+}
+::placeholder{
+    color: var(--Gray);
+}
+.invalid{
+    border-color: var(--Light-Red);
+}
+.error{
+    color: var(--Light-Red);
+    font-style: italic;
+    font-size: .6rem;
+    position: absolute;
+    bottom: 45%;
+    left: 33%;
+}
+.pattern-error, .empty{
+    display: none;
 }
 button{
     padding: .8rem 2.5rem;
@@ -67,6 +89,13 @@ small{
     color: var(--Gray);
 }
 @media (max-width:768px){
+    .logo{
+        width: 20%;
+    }
+    h1{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
     form{
         display: flex;
         flex-direction: column;
@@ -75,6 +104,10 @@ small{
     input{
         width: 100%;
         margin-bottom: .5rem;
+    }
+    .error{
+        position:static;
+        margin-bottom: 1rem;
     }
     button{
         width: 100%;

@@ -17,11 +17,13 @@
         <img src="./img/logo.svg" alt="Ping logo" aria-hidden="true" class="logo">
     </header>
     <main>
-        <h1>We are launching <b>Soon!</b></h1>
+        <h1>We are launching <b>soon!</b></h1>
         <p class="main__description">Subscribe and get notified</p>
         <form>
-            <input type="email" name="email" id="email" placeholder="Your email address..." required>
-            <button type="submit">Notify Me</button>
+            <input type="email" name="email" id="input-s" placeholder="Your email address..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <p class="pattern-error error" id="valid-msg">Please provide a valid email address</p>
+            <p class="empty error" id="empty-msg">Whoops! It looks like you forgot to add your email</p>
+            <button type="submit" id="submit">Notify Me</button>
         </form>
         <img src="./img/illustration-dashboard.png" class="main__illustration" alt="illustration dashboard" aria-hidden="true">
     </main>
