@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+html{
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+    font-size: 20px;
+}
+body{
+    text-align: center;
+    padding: 1rem;
+}
+.logo{
+    margin: 2rem 0;
+}
+h1{
+    font-weight: 300;
+    color: var(--Gray);
+    margin-bottom: .5rem;
+}
+b{
+    color: var(--Very-Dark-Blue);
+}
+.main__description{
+    font-size: .8rem;
+    margin-bottom: 2rem;
+}
+input{
+    width: 25%;
+    padding: .8rem 1rem;
+    border: 1px solid var(--Pale-Blue);
+    border-radius: 2rem;
+    outline: none;
+}
+button{
+    padding: .8rem 2.5rem;
+    margin-bottom: 4rem;
+    margin-left: .5rem;
+    background-color: var(--Blue);
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0px 11px 37px -4px rgba(194,211,255,0.95);
+    -webkit-box-shadow: 0px 11px 37px -4px rgba(194,211,255,0.95);
+    -moz-box-shadow: 0px 11px 37px -4px rgba(194,211,255,0.95);
+}
+button:hover{
+    background-color: hsl(223, 87%, 70%);
+}
+.main__illustration{
+    max-width: 25rem;
+    object-fit: scale-down;
+    margin-bottom: 2rem;
+}
+.social-icon{
+    width: 30px;
+    margin-left: .5rem;
+}
+small{
+    font-size: .5rem;
+    color: var(--Gray);
+}
+@media (max-width:768px){
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input{
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+    button{
+        width: 100%;
+    }
+    .main__illustration{
+        width: 100%;
+    }
+}

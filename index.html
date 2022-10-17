@@ -8,25 +8,28 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
     <script defer src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="./img/logo.svg">
+        <img src="./img/logo.svg" alt="Ping logo" aria-hidden="true" class="logo">
     </header>
     <main>
         <h1>We are launching <b>Soon!</b></h1>
-        <p>Subscribe and get notified</p>
+        <p class="main__description">Subscribe and get notified</p>
         <form>
             <input type="email" name="email" id="email" placeholder="Your email address..." required>
             <button type="submit">Notify Me</button>
         </form>
-        <img src="./img/illustration-dashboard.png">
+        <img src="./img/illustration-dashboard.png" class="main__illustration" alt="illustration dashboard" aria-hidden="true">
     </main>
     <footer>
         <div class="social">
-            <img src="./img/facebook-Icon.png">
-            <img src="./img/Twitter_icon.png">
-            <img src="./img/Insta_Icon.png">
+            <img src="./img/facebook-Icon.png" class="social-icon"  alt="facebook icon" aria-hidden="true">
+            <img src="./img/Twitter_icon.png" class="social-icon" alt="twitter icon" aria-hidden="true">
+            <img src="./img/Insta_Icon.png" class="social-icon" alt="Instagram icon" aria-hidden="true">
         </div>
         <small>&#169; Copyright Ping. All rights reserved</small>
     </footer>
