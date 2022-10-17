@@ -96,11 +96,6 @@ small{
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
-    form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     input{
         width: 100%;
         margin-bottom: .5rem;
@@ -111,6 +106,7 @@ small{
     }
     button{
         width: 100%;
+        margin-left: 0;
     }
     .main__illustration{
         width: 100%;

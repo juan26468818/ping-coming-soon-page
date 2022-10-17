@@ -5,7 +5,6 @@ const patternErr = document.getElementById("valid-msg")
 const emptyErr = document.getElementById("empty-msg")
 
 button.addEventListener("click", ()=>{
-    console.log(input.value)
     input.className += " invalid";
     if(input.value === ""){
         patternErr.className += " pattern-error"
